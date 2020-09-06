@@ -1,0 +1,87 @@
+<!--Bootstrap Form using Bootstrap Grid-->
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-2 center">
+            <img src="~/../assets/images/logo.jpg" width="100px" height="80px" />
+
+      </div>
+    
+
+    </div>
+    <div class="row">
+      <div class="col-md-8 offset-2 pt-3" style="border-top: silver 2px solid;">
+       
+
+  </div>
+
+    </div>
+   
+
+
+<div class="row">
+  <div class="col-md-12">
+    <h6 class="text-info text-danger text-center"><small>Sign Up</small></h6>
+    
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h4 class="text-info text-center">Create Your Account</h4>
+    <h6 class="text-warning text-center">You may create account for shopping</h6>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 offset-3">
+  <table class="table table-responsive">
+    <tr>
+      <td>
+        <a href=""><img src="../assets/images/GoogleSignUp.JPG" height="50px" /></a>
+      </td>
+      <td>
+        <a href=""><img src="../assets/images/FacebookSignUp.JPG" height="50px" (click)="submitLogin()" /></a>
+      
+      </td>
+    </tr>
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 text-center">
+    <img src="../assets/images/OR.JPG" width="80%" />
+  </div>
+
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <form>
+      <div class="form-group">
+      
+        <input type="text" class="form-control" name="fname"  [(ngModel)]="fname"  placeholder="First Name" >
+      </div>
+      <div class="form-group">
+       
+        <input type="text" class="form-control" name="lname" [(ngModel)]="lname"   placeholder="Last Name" >
+      </div>
+      <div class="form-group">
+       
+        <input type="email" class="form-control" name="user.email"  [(ngModel)]="user.email"  placeholder="Email"  >
+      </div>
+      <div class="form-group">
+       
+        <input type="password" class="form-control" name="user.password"  [(ngModel)]="user.password"  placeholder="Password "  >
+      </div>
+      <div class="form-group">
+        <label>
+         By clicking on SignUp , you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy.</a>
+        </label>
+      </div>
+      <button type="button" class="btn btn-lg btn-primary"   style="width: 100%;" (click)="submitform()">Submit</button><span class="text-success" style="font-size: 18px;">{{ result }}</span>
+    </form>
+    
+  </div>
+</div>
+ 
+ 
+  </div>
+
+<router-outlet></router-outlet>
